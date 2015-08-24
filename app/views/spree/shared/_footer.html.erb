@@ -1,0 +1,117 @@
+<footer id="footer" class="sixteen columns" data-hook>
+	<div class="container">
+		<div class="main-footer">
+			<div id="top-footerContent">
+				<div class="left-footerContent">
+					<h3>Information</h3>
+					<div id="footer-right" class="columns omega eight" data-hook>
+						
+					</div>
+				</div>
+
+				<div class="right-footerContent">
+					<div class="left-fc">
+						<h3>Contact</h3>
+						<ul>
+		   
+		                  <li>
+		                     <i class="fa fa-building">&nbsp;</i>
+		                     <span><%= @c.name %></span>
+		                  </li>
+		   
+		                  <li>
+		                     <i class="fa fa-mobile">&nbsp;</i>
+		                     <span>
+		                     		<%= @c.phone %>
+		                     </span>
+		                  </li>
+		   
+		                  <li>
+		                     <i class="fa fa-at">&nbsp;</i>
+		                     <span>
+		                        <a href="mailto:<%= @c.email %>"><%= @c.email %></a>
+		                     </span>
+		                  </li>
+
+		                  <li>
+		                  <i class="fa fa-building">&nbsp;</i>
+		                  	<span>
+		                  		<%= @c.address2 %>
+		                  	</span>
+		                  </li>
+
+		                  <li>
+		                  <i class="fa fa-building">&nbsp;</i>
+		                  	<span>
+		                  		<%= @c.address3 %>
+		                  	</span>
+		                  </li>
+
+		                  <li>
+		                  <i class="fa fa-building">&nbsp;</i>
+		                  	<span>
+		                  		<%= @c.town %>
+		                  	</span>
+		                  </li>
+
+		                  <li>
+		                  <i class="fa fa-building">&nbsp;</i>
+		                  	<span>
+		                  		<%= @c.county %>
+		                  	</span>
+		                  </li>
+
+		                  <li>
+		                  <i class="fa fa-building">&nbsp;</i>
+		                  	<span>
+		                  		<%= @c.postcode %>
+		                  	</span>
+		                  </li>
+
+		               </ul>
+					</div>
+
+					<div class="right-fc">
+						<h3>Newsletter</h3>
+						<form id="contact_newsletter" class="form-horizontal">
+							<fieldset id="fieldNewsletter">						
+								<div> 
+									<label for="email">Email</label>
+									<input id="email-newsletter" name="email-newsletter" type="email" value="" placeholder="Enter your e-mail..." required="">
+								</div>
+									 
+								<div class="button">
+									<input id="submit" type="submit" value="">
+								</div>
+							</fieldset>
+						</form>
+
+						<div class="social">
+							<ul>
+								<li>
+									<%= link_to image_tag('/assets/facebook-icon.png'), 'http://'+@c.facebook, :target => "_blank" %>
+								</li>
+
+								<li>
+									<%= link_to image_tag('/assets/twitter-icon.png'), 'http://'+@c.twitter, :target => "_blank" %>
+								</li>
+
+								<li>
+									<%= link_to image_tag('/assets/linkedin-icon.png'), 'http://'+@c.linkedin, :target => "_blank" %>
+								</li>
+
+								
+
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div><!--#top-footerContent-->
+
+			<div id="bottom-footerContent" data-hook>
+				<p><%= Spree.t :powered_by  %> <%= link_to ' 39Bots', 'http://google.com/' %></p>
+			</div><!--#bottom-footerContent-->
+		</div><!--.main-footer-->
+	</div>
+</footer>
